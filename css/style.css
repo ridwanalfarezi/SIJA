@@ -45,7 +45,7 @@ section {
 }
 section h2 {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 h1,
 h2,
@@ -78,7 +78,7 @@ img {
   display: inline-block;
   background: var(--color-white);
   color: var(--color-black);
-  padding: 1rem 2rem;
+  padding: 1.5rem 4rem;
   font-weight: 500;
   transition: var(--transition);
 }
@@ -93,13 +93,12 @@ img {
   border-radius: 5rem;
 }
 
-.button1{
- display: inline-flex;
- padding: 40px;
-}
-
 .btn-primary:hover {
   background: var(--color-danger);
+}
+
+.button1 {
+  margin-top: 5px;
 }
 
 /* -------------Nav Bar-------------- */
@@ -178,7 +177,7 @@ header {
 /* ----------categories--------- */
 .categories {
   background: var(--color-bg);
-  height: 40rem;
+  height: 45rem;
   padding-top: 7%;
   padding-bottom: 7%;
 }
@@ -220,6 +219,7 @@ header {
   padding: 20px;
   transition: 0.5s;
   background-color: var(--color-bg3);
+  
 }
 .categories__right:hover {
   background: var(--color-bg2);
@@ -232,7 +232,7 @@ header {
   justify-content: center;
 }
 .categories__right ol {
-  text-align: justify;
+
   font-size: 18px;
 }
 .category {
@@ -272,6 +272,14 @@ header {
 .category p {
   font-size: 0.85rem;
 }
+@media (max-width: 768px) {
+  .categories__left:hover, 
+  .categories__right:hover{
+    transform: scale(1.03);
+    transition: 0.5s;
+  }
+  }
+
 
 /* Carousel Nav */
 .owl-carousel,
@@ -419,6 +427,7 @@ header {
 }
 .faq.open p {
   display: block;
+  
 }
 
 /* -------Testimonials------- */
@@ -432,12 +441,12 @@ header {
   padding-top: 2rem;
 }
 .avatar {
-  width: 6rem;
-  height: 6rem;
+  width: 7rem;
+  height: 7rem;
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto 1rem;
-  border: 1rem solid var(--color-bg1);
+  border: 0rem solid var(--color-bg1);
 }
 .testimonial__info {
   text-align: center;
@@ -464,6 +473,7 @@ header {
   left: 45%;
   top: -1.5rem;
   transform: rotate(45deg);
+  z-index: -10;
 }
 
 /* -------footer--------- */
@@ -538,8 +548,8 @@ footer ul li a:hover {
     position: fixed;
     top: 5rem;
     right: 5%;
-    height: fit-content;
-    width: 18rem;
+    height: 10.5rem;
+    width: 10rem;
     flex-direction: column;
     gap: 0;
     display: none;
@@ -597,6 +607,7 @@ footer ul li a:hover {
   /* ---------categories------- */
   .categories {
     height: auto;
+    margin-top: 35px;
   }
   .categories__container {
     grid-template-columns: 1fr;
@@ -705,6 +716,7 @@ footer ul li a:hover {
   position: absolute;
   width: auto;
   pointer-events: none;
+  
 }
 .modal.fade .modal-dialog {
   transition: transform 0.3s ease-out;
@@ -717,7 +729,7 @@ footer ul li a:hover {
 }
 .modal.show .modal-dialog {
   transform: none;
-}
+} 
 .modal.modal-static .modal-dialog {
   transform: scale(1.02);
 }
@@ -743,7 +755,7 @@ footer ul li a:hover {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 20%;
+  padding: 25%;
   margin-left: -17%;
   margin-bottom: 10%;
   margin-top: -20%;
@@ -835,16 +847,16 @@ footer ul li a:hover {
 .modal-fullscreen {
   width: 90vw;
   max-width: none;
-  height: 200vh;
-  align-items: center;
+  height: 185vh;
   display: flex;
   align-items: center;
   min-height: calc(100% - 1rem);
-  text-align: justify;
+  text-align:justify;
   border-radius: 1.5rem;
 }
 .modal-fullscreen p {
-  margin: 2%;
+  padding-bottom: -50px;
+  
 }
 .modal-fullscreen .modal-content {
   height: 100%;
@@ -985,6 +997,7 @@ footer ul li a:hover {
   /* background-color: #b9bdc0; */
   background-color: #dde0e2;
   font-style:inherit;
-
+  padding-bottom: 40px;
+  padding-top: 50px
 }
 
